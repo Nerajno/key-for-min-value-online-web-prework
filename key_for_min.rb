@@ -4,12 +4,16 @@
 def key_for_min_value(name_hash)
   vals = 1000000
   low_key = ''
-  for key,val in name_hash
-    if val < vals
-      vals = val
-      low_key = key
-    end
-  end
+  if name_hash.length !=0
+    for key,val in name_hash
+      if val < vals
+        vals = val
+        low_key = key
+      end
+   end
+ else
+   low_key =nil
+ end
   return low_key
 end
 
