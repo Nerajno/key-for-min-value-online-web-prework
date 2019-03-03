@@ -5,7 +5,6 @@ def key_for_min_value(name_hash)
   vals = 1000000
   low_key = ''
   for key,val in name_hash
-    puts key=>val
     if val < vals
       vals = val
       low_key = key
